@@ -32,7 +32,7 @@ Clone and run locally (see instructions below).
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/anime-ryu.git
+git clone https://github.com/Domiiinii/AnimeRyu.git
 cd AnimeRyu
 npm install
 npm start
