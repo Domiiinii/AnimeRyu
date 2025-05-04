@@ -30,7 +30,11 @@ Clone and run locally (see instructions below).
 - Node.js & npm installed
 
 ### Installation
-
+```bash
+pip install djangorestframework
+pip install djangorestframework-simplejwt
+pip install django-cors-headers
+```
 ```bash
 git clone https://github.com/Domiiinii/AnimeRyu.git
 cd AnimeRyu
