@@ -1,0 +1,61 @@
+.seasonal-scroll-container {
+  margin-bottom: 30px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #aaa transparent;
+}
+
+.seasonal-scroll-container .details {
+  padding: 0px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.seasonal-scroll-container .details h3 {
+  font-size: 16px;
+  line-height: 1.2;
+  max-height: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.seasonal-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.seasonal-scroll-container::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 4px;
+}
+
+.seasonal-anime-card {
+  display: inline-block;
+  padding: 10px;
+  width: 150px;
+  height: 230px;
+  margin: 0 10px;
+  background: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.seasonal-anime-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.seasonal-anime-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}

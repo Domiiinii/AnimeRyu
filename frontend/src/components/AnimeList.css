@@ -1,0 +1,91 @@
+.anime-list-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
+  padding: 20px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.anime-card {
+  display: flex;
+  flex-direction: column;
+  background: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+  height: 310px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.anime-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.anime-card .details {
+  padding: 10px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.anime-card .details h3 {
+  font-size: 16px;
+  line-height: 1.2;
+  max-height: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.anime-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 200px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.pagination button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 16px;
+  color: #fff;
+}
